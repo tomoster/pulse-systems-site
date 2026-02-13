@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-const trustLogos = ["n8n", "HubSpot", "QuickBooks", "Gmail", "Slack", "Calendly"];
+const trustLogos = ["QuickBooks", "HubSpot", "Google Workspace", "Excel", "Outlook", "Salesforce"];
 
 const containerVariants = {
   hidden: {},
