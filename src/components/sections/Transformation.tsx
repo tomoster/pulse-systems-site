@@ -166,7 +166,7 @@ export default function Transformation() {
         {/* Animated Counter Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <CounterStat end={15} suffix="+ hrs/week" label="Saved on average" delay={0} />
-          <CounterStat end={30} suffix=" days" label="ROI in first month" delay={200} />
+          <CounterStat end={10} suffix="x" label="Faster than doing it manually" delay={200} />
           <CounterStat end={24} suffix="/7" label="Monitoring & self-healing" delay={400} />
         </div>
       </div>
