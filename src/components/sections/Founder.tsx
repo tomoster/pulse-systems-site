@@ -49,14 +49,14 @@ export default function Founder() {
             </p>
 
             <blockquote className="text-text-secondary text-lg leading-relaxed mb-8 border-l-2 border-accent-indigo/30 pl-6">
-              I started Pulse Systems because I kept seeing the same thing: smart
-              business owners buried in work their computers should be doing.
-              Manual data entry. Copy-paste between tools. Follow-ups tracked on
-              sticky notes.
+              I started Pulse Systems after watching a friend&apos;s 20-person dental
+              practice nearly lose a major insurance contract over a missed renewal
+              reminder. One sticky note, buried under a stack. The fix took me a
+              weekend to automate.
               <br />
               <br />
-              I build the systems that make that work disappear — so you can
-              focus on what you actually started your business to do.
+              That&apos;s when I realized: most businesses are one automation away
+              from running smoother than they ever thought possible.
             </blockquote>
 
             <a

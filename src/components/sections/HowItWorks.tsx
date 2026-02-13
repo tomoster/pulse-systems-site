@@ -30,7 +30,7 @@ const steps = [
     number: "03",
     title: "It Runs Itself",
     description:
-      "24/7 monitoring. Self-healing workflows. Monthly optimization. You focus on growth.",
+      "You'll get a monthly report showing what ran, what was caught, and how we optimized. That's the only time you'll think about it.",
     icon: (
       <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M13 10V3L4 14h7v7l9-11h-7z" strokeLinecap="round" strokeLinejoin="round" />

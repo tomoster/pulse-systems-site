@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { MovingBorderLink } from "@/components/ui/moving-border";
 
 const trustLogos = ["QuickBooks", "HubSpot", "Google Workspace", "Excel", "Outlook", "Salesforce"];
 
@@ -51,18 +52,20 @@ export default function Hero() {
             variants={itemVariants}
             className="mx-auto mt-6 max-w-2xl text-lg text-text-secondary sm:text-xl"
           >
-            We build custom automations that connect your existing tools,
-            monitor themselves, and free up 15-20 hours of your week. You focus
-            on growth — we handle the rest.
+            We build custom automations that connect your existing tools
+            and free up 15-20 hours of your week. Set up in weeks, runs
+            forever.
           </motion.p>
 
           <motion.div
             variants={itemVariants}
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
-            <a
+            <MovingBorderLink
               href="#contact"
-              className="group relative inline-flex items-center gap-2 rounded-xl bg-accent-indigo px-8 py-4 text-base font-semibold text-white transition-all hover:bg-accent-indigo/90 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)]"
+              borderRadius="0.75rem"
+              containerClassName="group"
+              className="gap-2 px-8 py-4 text-base font-semibold text-white"
             >
               Book a Free Discovery Call
               <svg
@@ -78,7 +81,7 @@ export default function Hero() {
                   d="M13 7l5 5m0 0l-5 5m5-5H6"
                 />
               </svg>
-            </a>
+            </MovingBorderLink>
             <a
               href="#how-it-works"
               className="gradient-border inline-flex items-center gap-2 rounded-xl bg-bg-surface/50 px-8 py-4 text-base font-medium text-text-primary transition-all hover:bg-bg-elevated"

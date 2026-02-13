@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
+import { MovingBorderLink } from "@/components/ui/moving-border";
 
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
@@ -74,12 +75,13 @@ export default function Navigation() {
               {link.label}
             </a>
           ))}
-          <a
+          <MovingBorderLink
             href="#contact"
-            className="gradient-border rounded-lg bg-bg-surface/50 px-5 py-2 text-sm font-medium text-text-primary transition-all hover:bg-bg-elevated"
+            borderRadius="0.5rem"
+            className="px-5 py-2 text-sm font-medium text-text-primary"
           >
             Book a Call
-          </a>
+          </MovingBorderLink>
         </div>
 
         <button

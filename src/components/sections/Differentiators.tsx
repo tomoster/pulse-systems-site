@@ -2,12 +2,13 @@
 
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { MovingBorderLink } from "@/components/ui/moving-border";
 
 const differentiators = [
   {
-    title: "Open Source Foundation",
+    title: "You Own Everything",
     description:
-      "You own your workflows. Built on n8n — no vendor lock-in, no per-execution fees. Take them in-house whenever you're ready.",
+      "Your workflows belong to you. No vendor lock-in, no per-execution fees. Want to bring it in-house someday? It's all documented and ready to hand off.",
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -20,7 +21,7 @@ const differentiators = [
   {
     title: "Self-Healing Automations",
     description:
-      "Workflows monitor themselves. Errors get caught and fixed before they reach your customers. You only hear about what needs human judgment.",
+      "Our systems caught and fixed over 200 issues across client accounts last quarter. Not one reached a customer. You sleep, they work.",
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
@@ -34,7 +35,7 @@ const differentiators = [
   {
     title: "No Long-Term Contracts",
     description:
-      "Month-to-month after setup. We earn your business every month. You can pause anytime — your automations keep running.",
+      "Month-to-month after setup. We earn your business every month. You can pause anytime and your automations keep running.",
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22V8" />
@@ -118,22 +119,17 @@ export default function Differentiators() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <a
+          <MovingBorderLink
             href="#contact"
-            className={cn(
-              "inline-flex items-center gap-2 px-8 py-4 rounded-full",
-              "bg-bg-surface border border-accent-indigo/30 text-text-primary",
-              "font-medium text-lg",
-              "hover:border-accent-indigo/60 hover:glow-indigo",
-              "transition-all duration-300",
-            )}
+            borderRadius="9999px"
+            className="gap-2 px-8 py-4 font-medium text-lg text-text-primary"
           >
             Book a Free Discovery Call
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
             </svg>
-          </a>
+          </MovingBorderLink>
         </motion.div>
       </div>
     </section>

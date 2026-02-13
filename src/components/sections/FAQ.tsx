@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "Setup typically ranges from $2,000-$10,000 depending on complexity — less than hiring a part-time admin. Ongoing management runs $500-$2,000/month. Most clients see ROI within the first month.",
+      "Setup typically ranges from $2,000-$10,000 depending on complexity. Less than a part-time admin. Ongoing management runs $500-$2,000/month. Most clients see ROI within the first month.",
   },
   {
     question: "How long until I see results?",
@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "What tools do you work with?",
     answer:
-      "If it has an API, we can probably connect it. We regularly work with HubSpot, QuickBooks, Gmail, Calendly, Slack, Shopify, and dozens more. We'll map your specific tool stack on our discovery call.",
+      "If your tool exists, we can probably connect it. We regularly work with HubSpot, QuickBooks, Gmail, Calendly, Slack, Shopify, and dozens more. We'll map your specific stack on our discovery call.",
   },
   {
     question: "Do I need to be technical?",
@@ -28,17 +28,17 @@ const faqs = [
   {
     question: "What if I want to stop?",
     answer:
-      "No long-term contracts. Month-to-month after initial setup. Your automations are built on open-source tools, so you own everything. We document it all — you're never dependent on us.",
+      "No long-term contracts. Month-to-month after initial setup. You own everything we build. We document it all so you're never dependent on us.",
   },
   {
     question: "How is this different from Zapier?",
     answer:
-      "Zapier is a platform — you still build and maintain everything yourself. We handle the entire process: design, build, monitor, fix, and optimize. Think of it as having an automation engineer on retainer for a fraction of the cost.",
+      "With Zapier, you're building and maintaining everything yourself. We handle the entire process: design, build, monitor, fix, and optimize. Think of it as having an automation team on retainer for a fraction of the cost.",
   },
   {
     question: "What happens if something breaks?",
     answer:
-      "Our workflows monitor themselves 24/7. Most errors are caught and fixed automatically before you'd ever notice. For anything that needs human judgment, we're on it — you don't have to lift a finger.",
+      "Our systems monitor themselves 24/7. Most issues are caught and fixed automatically before you'd ever notice. If something needs a human call, we handle it. You don't lift a finger.",
   },
 ];
 

@@ -45,7 +45,7 @@ const painPoints = [
     ),
     title: "Errors Nobody Catches",
     description:
-      "Manual processes mean human mistakes. Wrong invoices, missed appointments, duplicate entries — until a customer notices.",
+      "Manual processes mean human mistakes. Wrong invoices, missed appointments, duplicate entries. You find out when a customer calls.",
   },
 ];
 
