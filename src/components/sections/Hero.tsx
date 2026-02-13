@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-import { MovingBorderLink } from "@/components/ui/moving-border";
 
 const trustLogos = ["QuickBooks", "HubSpot", "Google Workspace", "Excel", "Outlook", "Salesforce"];
 
@@ -61,27 +60,30 @@ export default function Hero() {
             variants={itemVariants}
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
-            <MovingBorderLink
+            <a
               href="#contact"
-              borderRadius="0.75rem"
-              containerClassName="group"
-              className="gap-2 px-8 py-4 text-base font-semibold text-white"
+              className="group relative inline-flex overflow-hidden rounded-xl p-[1px] transition-all"
+              style={{
+                background: "linear-gradient(135deg, var(--accent-indigo), var(--accent-teal))",
+              }}
             >
-              Book a Free Discovery Call
-              <svg
-                className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </MovingBorderLink>
+              <span className="inline-flex items-center gap-2 rounded-[calc(0.75rem-1px)] bg-bg-deep px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-bg-elevated">
+                Book a Free Discovery Call
+                <svg
+                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </span>
+            </a>
             <a
               href="#how-it-works"
               className="gradient-border inline-flex items-center gap-2 rounded-xl bg-bg-surface/50 px-8 py-4 text-base font-medium text-text-primary transition-all hover:bg-bg-elevated"
