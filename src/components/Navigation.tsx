@@ -78,6 +78,7 @@ export default function Navigation() {
           <MovingBorderLink
             href="#contact"
             borderRadius="0.5rem"
+            glowSize={40}
             className="px-5 py-2 text-sm font-medium text-text-primary"
           >
             Book a Call

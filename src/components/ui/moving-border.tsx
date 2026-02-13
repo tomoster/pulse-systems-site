@@ -16,7 +16,7 @@ function cssToPixels(value: string): number {
   return parseFloat(value) || 12;
 }
 
-function MovingGlow({ duration, radius }: { duration: number; radius: number }) {
+function MovingGlow({ duration, radius, glowSize = 80 }: { duration: number; radius: number; glowSize?: number }) {
   const pathRef = useRef<SVGRectElement>(null);
   const progress = useMotionValue(0);
 
@@ -63,7 +63,10 @@ function MovingGlow({ duration, radius }: { duration: number; radius: number }) 
           transform,
         }}
       >
-        <div className="h-20 w-20 bg-[radial-gradient(var(--accent-indigo)_40%,var(--accent-teal)_60%,transparent_80%)] opacity-80" />
+        <div
+          style={{ width: glowSize, height: glowSize }}
+          className="bg-[radial-gradient(var(--accent-indigo)_40%,var(--accent-teal)_60%,transparent_80%)] opacity-80"
+        />
       </motion.div>
     </>
   );
@@ -75,6 +78,7 @@ export function MovingBorderLink({
   className,
   containerClassName,
   borderRadius = "0.75rem",
+  glowSize,
   href,
   onClick,
   ...props
@@ -84,6 +88,7 @@ export function MovingBorderLink({
   className?: string;
   containerClassName?: string;
   borderRadius?: string;
+  glowSize?: number;
   href: string;
   onClick?: () => void;
 } & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "className">) {
@@ -112,7 +117,7 @@ export function MovingBorderLink({
       {...props}
     >
       <div className="absolute inset-0">
-        <MovingGlow duration={duration} radius={svgRadius} />
+        <MovingGlow duration={duration} radius={svgRadius} glowSize={glowSize} />
       </div>
       <span
         className={cn(
